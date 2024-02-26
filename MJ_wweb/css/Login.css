@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css?family=Kanit");
+
+*{ 
+    margin: 0;
+    padding: 0;
+}
+   
+   html{
+       width: 100vw;
+       height: 100vh;
+   }
+   
+   /* CSS which you need for blurred box */
+   body{
+    font-family: 'Kanit';
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 0.02em;
+     font-weight: 400;
+    -webkit-font-smoothing: antialiased; 
+   }
+   
+   .video-bg {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(2px);
+    
+    video {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+    }
+   }
+   
+   .blurred-box{
+     position: relative;
+     width: 20%;
+     height: 50%;
+     top: calc(50% - 175px);
+     left: calc(50% - 125px);
+     background: inherit;
+     border-radius: 10px;
+     overflow: hidden;
+   }
+   
+   .blurred-box:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: inherit; 
+    position: absolute;
+    left: -25px;
+    left: position;
+    right: 0;
+    top: -25px;  
+    top: position;
+    bottom: 0;
+    box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.248);
+    filter: blur(40px);
+   }
+   
+   /* Form which you dont need */
+   .user-login-box{
+     position: relative;
+     margin-top: 50px;
+     text-align: center;
+     z-index: 1;
+   }
+   .user-login-box > *{
+    margin-top: 0px;
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 200px;
+   }
+   
+   .user-name{
+     font-size: 35px;
+     margin-bottom: 10px;
+     color: white;
+   }
+   
+   input.user-password{
+     width: 120px;
+     height: 18px;
+     opacity: 0.4;
+     border-radius: 2px;
+     padding: 5px 15px;
+     border: 0;
+   }
+   
+   .login-username, .login-password {
+    font-size: 16px;
+    background: transparent;
+    border: 0 solid;
+    border-bottom: 1px solid rgba(white, .5);
+    color: white;
+    display: block;
+    margin: 1rem;
+    padding: .5rem;
+    transition: 250ms background ease-in;
+    width: calc(100% - 3rem);
+    &:focus {
+      background: white;
+      color: black;
+      transition: 250ms background ease-in;
+    }
+  }
+
+  .button-box{
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .button-submit, .button-reset{
+    font-family: 'Kanit';
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #9ec75dac;
+    color: #013106;
+    border: 0 solid;
+    border-bottom: 1px solid rgba(white, .5);
+    display: block;
+    margin: 1rem;
+    padding: .5rem;
+    width: calc(100% - 3rem);
+    -webkit-transition-duration: 0.3s;
+  }
+
+  .button-submit:hover{
+    background: #259464fc;
+    color: #d9e9bdac;
+    transition: 300ms background ease-in;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: calc(100% - 3rem);
+
+    width: 80%;
+    height: auto;
+    cursor: pointer;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+  }
+
+  .button-reset{
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #f7a4a484;
+    color: #581313;
+    border: 0 solid;
+    border-bottom: 1px solid rgba(white, .5);
+    margin: 1rem;
+    padding: .5rem;
+    width: calc(100% - 3rem);
+    -webkit-transition-duration: 0.3s;
+  }
+
+  .button-reset:hover{
+    background: #B06161;
+    color: #f6bdbd;
+    transition: 300ms background ease-in;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: calc(100% - 3rem);
+
+    width: 80%;
+    height: auto;
+    cursor: pointer;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+  }
+
+  .footer {
+    text-align: center;
+    background-color: #938c8c5e;
+    backdrop-filter: blur(10px);
+    left: 0;
+    bottom: 0;
+    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    font-size: 14px;
+  }
